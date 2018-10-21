@@ -1,0 +1,19 @@
+<image src="/images/bg.jpg" class='bg'></image>
+<view class='container'>
+  <view class='search-view'>
+    <text class='logo'>
+      图片搜索
+    </text>
+    <form class='search-form' bindsubmit='query'>
+      <button form-type='submit'>
+        <image src='/images/search.png'></image>
+      </button>
+      <input name="q" />
+    </form>
+    <view class='link'>
+      <navigator url='/pages/home/list?q={{item}}' wx:for="{{link}}">{{item}}</navigator>
+
+    </view>
+
+  </view>
+</view>
