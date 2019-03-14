@@ -21,7 +21,7 @@ Page({
     //分页加载
     //page
     this.createContainer();
-    this.data.word = options.q || "春日野囧";
+    this.data.word = options.q || "涂山";
     this.showPage();
     wx.setNavigationBarTitle({
       title: this.data.word,
